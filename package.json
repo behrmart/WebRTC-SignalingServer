@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/behrmart/WebRTC-SignalingServer/issues"
   },
-  "homepage": "https://github.com/behrmart/WebRTC-SignalingServer#readme"
+  "homepage": "https://github.com/behrmart/WebRTC-SignalingServer#readme",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
 }
