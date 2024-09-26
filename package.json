@@ -1,0 +1,24 @@
+{
+  "name": "signalingserver",
+  "version": "1.0.0",
+  "description": "WebRTC Signaling Server",
+  "main": "signalingserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/behrmart/WebRTC-SignalingServer.git"
+  },
+  "keywords": [
+    "WebRTC",
+    "signaling",
+    "server"
+  ],
+  "author": "Bernardo Felipe Martinez Meave",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/behrmart/WebRTC-SignalingServer/issues"
+  },
+  "homepage": "https://github.com/behrmart/WebRTC-SignalingServer#readme"
+}
