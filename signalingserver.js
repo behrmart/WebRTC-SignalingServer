@@ -10,7 +10,7 @@ ws.on("listening", function () {
 });
 
 ws.on("connection", function (connection) {
-  console.log("User is connected");
+  console.log("WebSocket is connected");
   connection.send("Hello from Signaling Server");
 
   /*Action to do when user send messages */
@@ -26,6 +26,6 @@ ws.on("connection", function (connection) {
 
   /*Action to do when user try to close the connection */
   connection.on("close", function () {
-    console.log("Dissconnecting user");
+    console.log("WebSocket Closed...Disconnecting user");
   });
 });
