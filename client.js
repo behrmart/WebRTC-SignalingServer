@@ -10,8 +10,16 @@ ws.onopen = function () {
 
 ws.onmessage = function (evt) {
   //handle messages from server
-  var received_msg = evt.data;
-  alert("Message from server = " + received_msg);
+  if (typeof evt.data === "string") {
+    // Handle string message
+    alert("Text message received: " + evt.data);
+  } else if (evt.data instanceof Blob) {
+    // Handle binary data as Blob
+    alert("Binary Blob received.");
+  } else if (evt.data instanceof ArrayBuffer) {
+    // Handle binary data as ArrayBuffer
+    alert("ArrayBuffer received.");
+  }
 };
 
 ws.onclose = function () {

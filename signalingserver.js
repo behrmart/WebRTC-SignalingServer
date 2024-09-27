@@ -15,7 +15,13 @@ ws.on("connection", function (connection) {
 
   /*Action to do when user send messages */
   connection.on("message", function (message) {
-    console.log("message from user: ", message);
+    if (typeof message === "string") {
+      // Message is plain text
+      console.log("Text message from user: ", message);
+    } else if (message instanceof Buffer) {
+      // Message is binary data (Buffer)
+      console.log("Binary message received: ", message);
+    }
   });
 
   /*Action to do when user try to close the connection */
